@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>第二篇文章</title>
+      <title>计算机应用22302</title>
       <link href="/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC/"/>
       <url>/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC/</url>
       
-        <content type="html"><![CDATA[<h2 id="这是我的第二篇文章"><a href="#这是我的第二篇文章" class="headerlink" title="这是我的第二篇文章"></a>这是我的第二篇文章</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="新年快乐"><a href="#新年快乐" class="headerlink" title="新年快乐"></a>新年快乐</h2>]]></content>
       
       
       
@@ -30,11 +30,24 @@
     
     
     <entry>
-      <title>第一篇文章</title>
+      <title>学习目标</title>
+      <link href="/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC-2/"/>
+      <url>/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC-2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><h2 id="ajax"><a href="#ajax" class="headerlink" title="ajax"></a>ajax</h2><h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><h2 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h2><h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><h2 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h2><h2 id="java-web"><a href="#java-web" class="headerlink" title="java web"></a>java web</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新年快乐</title>
       <link href="/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC/"/>
       <url>/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC/</url>
       
-        <content type="html"><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="段涛有点胖"><a href="#段涛有点胖" class="headerlink" title="段涛有点胖"></a>段涛有点胖</h2>]]></content>
       
       
       
