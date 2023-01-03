@@ -5,13 +5,13 @@
 <meta property="og:site_name" content="邹宇航の快乐小站">
 <meta property="og:description" content="一、Let和Constlet声明变量，可变 const定义常量（实际指的是变量和的内存地址），不可变 只能在其声明或定义的代码块内有效 注：若区块中存在let或者const命令，则这个区块对这些变量和常量在一开始就行成封闭作用域，只要在声明之前使用就会报错（可能会出现暂时性死区） 不能重复声明，否则报错（一）块级作用域闭包：JS中的变量是没有作用域时的一个临时解决方案 块级作用域可以任意嵌套 外层">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://source.fomal.cc/img/default_cover_6.webp">
+<meta property="og:image" content="https://source.fomal.cc/img/default_cover_5.webp">
 <meta property="article:published_time" content="2023-01-03T09:00:00.000Z">
 <meta property="article:modified_time" content="2023-01-03T07:00:00.000Z">
 <meta property="article:author" content="邹宇航">
 <meta property="article:tag" content="演示">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://source.fomal.cc/img/default_cover_6.webp"><link rel="shortcut icon" href="https://www.fomal.cc/favicon.ico"><link rel="canonical" href="https://zyhlovewwh.love/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://source.fomal.cc/img/default_cover_5.webp"><link rel="shortcut icon" href="https://www.fomal.cc/favicon.ico"><link rel="canonical" href="https://zyhlovewwh.love/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -146,7 +146,7 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.fomal.cc/assets/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://source.fomal.cc/img/default_cover_6.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">邹宇航の快乐小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">关于ES6新特性</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-03T09:00:00.000Z" title="发表于 2023-01-03 17:00:00">2023-01-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-03T07:00:00.000Z" title="更新于 2023-01-03 15:00:00">2023-01-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">748</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="关于ES6新特性"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、Let和Const"><a href="#一、Let和Const" class="headerlink" title="一、Let和Const"></a>一、Let和Const</h2><p>let声明变量，可变</p>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.fomal.cc/assets/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://source.fomal.cc/img/default_cover_5.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">邹宇航の快乐小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">关于ES6新特性</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-03T09:00:00.000Z" title="发表于 2023-01-03 17:00:00">2023-01-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-03T07:00:00.000Z" title="更新于 2023-01-03 15:00:00">2023-01-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">14.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>47分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="关于ES6新特性"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、Let和Const"><a href="#一、Let和Const" class="headerlink" title="一、Let和Const"></a>一、Let和Const</h2><p>let声明变量，可变</p>
 <p>const定义常量（实际指的是变量和的内存地址），不可变</p>
 <p>只能在其声明或定义的代码块内有效</p>
 <p>注：若区块中存在let或者const命令，则这个区块对这些变量和常量在一开始就行成封闭作用域，只要在声明之前使用就会报错（可能会出现暂时性死区）</p>
@@ -158,7 +158,7 @@
 <p>函数声明的语句和let的行为类似，在块级作用域外不能访问</p>
 <p>函数声明也会提到块级作用域的头部</p>
 <p>（二）ES6声明变量的6种方式<br>var<br>function<br>let<br>const<br>import<br>class</p>
-<p>##二、解构赋值<br>按照一定模式从数组和对象中提取值，然后赋值给变量</p>
+<h2 id="二、解构赋值"><a href="#二、解构赋值" class="headerlink" title="二、解构赋值"></a>二、解构赋值</h2><p>按照一定模式从数组和对象中提取值，然后赋值给变量</p>
 <p>如果解构不成功，则变量的值为undefined</p>
 <p>不完全解构：等号左边的模式值匹配一部分的等号右边的数组，仍然可以解构成功</p>
 <p>解构赋值允指定默认值</p>
@@ -174,7 +174,556 @@
 <p>（四）函数的解构赋值<br>函数参数也可以进行解构，也可使用默认值</p>
 <p>（五）圆括号问题<br>变量声明语句，模式不能使用圆括号（eg：函数的参数）</p>
 <p>赋值语句的非模式部分可以使用圆括号</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://zyhlovewwh.love">邹宇航</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zyhlovewwh.love/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/">https://zyhlovewwh.love/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zyhlovewwh.love" target="_blank">邹宇航の快乐小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://source.fomal.cc/img/default_cover_6.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机应用22302</div></div></a></div><div class="next-post pull-right"><a href="/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC-2/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">学习目标</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.fomal.cc/assets/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">邹宇航</div><div class="author-info__description">个人小站</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zouyuhang233"><i class="fab fa-github"></i><span>前往小家...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zouyuhang233" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2151203112@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81Let%E5%92%8CConst"><span class="toc-text">一、Let和Const</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By 邹宇航</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+<h2 id="三、字符串的扩展"><a href="#三、字符串的扩展" class="headerlink" title="三、字符串的扩展"></a>三、字符串的扩展</h2><p>JS允许使用\uxxxx的形式表示一个字符，xxxx：字符的Unicode码点</p>
+<p>在JS内部，字符以UTF-16的格式存储，每个字符固定为2个字节</p>
+<p>codePointAt（）：能正确处理4个节点的字符，并返回一个字符的码点</p>
+<p>​ 参数：字符在字符串中的位置</p>
+<p>String.fromCharCode（）：可以识别大于0xFFFF的字符</p>
+<p>​ 参数：大于0xFFFF的字符</p>
+<p>at（）：可以识别Unicode编号大于0xFFFF的字符，返回正确的字符</p>
+<p>​ 参数：</p>
+<p>normalize（）：将字符的不同表示方法表示为同样的形式</p>
+<p>​ 参数：可以接受一个参数来决定normalize的形式，有4个可选值</p>
+<p>NFC（默认参数）：标准等价合成，指视觉和语义上的等价<br>NFD：标准等价分解，在标准等价的前提下，返回合成字符分解出的多个简单字符<br>NFKC：兼容等价合成，返回合成字符。兼容等价 指语义上等价，直觉上不等价<br>NFKD：兼容等价分解：在兼容等价的前提下，返回合成字符分解出的多个简单字符<br>（一）除indexOf（）外来确定一个字符串中是否包含灵感字符串的3中方法<br>includes（）：返回布尔值，表是否找到了参数字符串</p>
+<p>​ 参数：要查找的字符串</p>
+<p>starsWith（）：返回布尔值，表参数字符串是否在源字符串的头部</p>
+<p>​ 参数：要查找的字符串</p>
+<p>endsWith（）：返回布尔值，表参数字符串是否在源字符串的尾部</p>
+<p>​ 参数：要查找的字符串</p>
+<p>其他一些方法<br>repeat（）：返回一个字符串，表示将原字符串重复n次</p>
+<p>​ 参数：次数n</p>
+<p>注：</p>
+<p>参数是小数，会被取整<br>参数是负数或者Infinity，会报错<br>参数在0-1之间，则等同于0<br>参数为NaN，则等同于0<br>padStar（）：头部补全 而 padEnd（）：尾部补全</p>
+<p>​ 参数1：指定字符串的最小长度</p>
+<p>​ 参数2：用于补全的字符串</p>
+<p>注：</p>
+<p>若原字符串的长度等于或大于指定的最小长度，返回原字符串<br>若用于补全的字符串与原字符串之和超出了指定的最小长度，则会截去超出位数的补全字符串<br>如果省略了第二个参数，会用空格补全<br>（二）模板字符串<br>&#96;&#96;</p>
+<p>可当做普通字符串使用<br>可定义多行字符串<br>可嵌套变量（需将变量写在${}中）<br>可调用函数<br>可嵌套模板字符串<br>String.raw（）：充当模板字符串的处理函数，返回一个反斜线都被转义的字符串，对应于替换变量后的模板字符串</p>
+<p>​ 也可当正常的函数使用，第一个从参数应该是一个具有raw属性的对象（应该是一个数组）</p>
+<h2 id="四、数值的扩展"><a href="#四、数值的扩展" class="headerlink" title="四、数值的扩展"></a>四、数值的扩展</h2><p>ES6 中八进制要以前缀0o表示</p>
+<p>（一）Number的扩展<br>Number.isFinite（）：检查一个数值是否为有限的</p>
+<p>​ 参数：要检查的数值</p>
+<p>Number.isNaN（）：用于检查一个数值是否为NaN</p>
+<p>​ 参数：要检查的数值</p>
+<p>Number.isInteger（）：判断一个数是否为整数</p>
+<p>​ 参数：要检查的数值</p>
+<p>Number.isSafeInteger（）：判断一个数是否搂在这个范围之内，返回布尔值</p>
+<p>​ 参数：要检查的数值</p>
+<p>（二）Math对象的扩展<br>Math.trunc（）：用于除去一个数的小数部分，返回整数部分</p>
+<p>对于非数值，内部将其先转化为数值</p>
+<p>对于空值和无法返回的值，返回NaN</p>
+<p>​ 参数：要检查的数值</p>
+<p>Math.sign（）：判断一个数到底是正数，负数，还是0</p>
+<p>参数有5中情况</p>
+<p>参数为正数，返回+1<br>参数为负数，返回-1<br>参数为0，返回0<br>参数为-0，返回-0<br>其他值，返回NaN<br>注：对于非数值，会将其转换为数值</p>
+<p>Math.cbrt（）：用于计算一个数的立方根（对于非数值，此案转换为数值）</p>
+<p>Math.clz32（）：返回一个数的32位无符号整数形式有多少个前导0</p>
+<p>​ 参数：数值</p>
+<p>对于小数，只考虑整数部分<br>对于空值和其他类型的值，先转换成为数值，在计算<br>Math.imul（）：返回两个数以32位带符号正数形式相乘的结果，返回的也是一个32位的带符号整数</p>
+<p>Math.fround（）：返回一个数的单精度浮点数形式</p>
+<p>Math.hypot（）：返回所有参数的平方和的平方根</p>
+<p>若参数不是数值，会先转换成数值，在计算、<br>只要有一个参数无法转换为数值，就返回NaN<br>（1）对数<br>Math.expm1（x）：返回e的x次方-1</p>
+<p>Math.log1p（x）：返回ln（1+x），如果x小于-1，返回NaN</p>
+<p>Math.log10（x）：返回以10 为底x的对数，如果小于0，返回NaN</p>
+<p>Math.log2（x）：返回以2 为底x的对数，如果小于0，返回NaN</p>
+<p>（2）双曲函数<br>Math.sinh（x）：返回x的双曲正弦</p>
+<p>Math.cosh（x）：返回x的双曲余弦</p>
+<p>Math.tanh（x）：返回x的双曲正切</p>
+<p>Math.asinh（x）：返回x的反双曲正弦</p>
+<p>Math.acosh（x）：返回x的反双曲余弦</p>
+<p>Math.atanh（x）：返回x的反双曲正切</p>
+<p>（3）Math.signbit（）<br>判断一个数的正负</p>
+<p>参数是NaN，返回false<br>参数是-0，返回true<br>参数是负值，返回true<br>其他情况，返回false<br>（三）integer数据类型<br>必须要以后缀n来表示</p>
+<p>二进制、八进制、十六进制都要以后缀n来表示</p>
+<p>注：</p>
+<p>几乎所有的Number运算都能用在integer中，除&gt;&gt;&gt;和求证运算符+<br>Integer类型与Number类型不能混合运算，会报错<br>相等运算符（&#x3D;&#x3D;）会改变数据类型，不能混合使用<br>精确相等运算符（&#x3D;&#x3D;&#x3D;）不会改变数据类型，可以混合使用<br>五、函数的扩展<br>ES6允许为函数设置默认值，即直接写在参数定义的后面</p>
+<p>使用参数默认值时，不能有同名的参数</p>
+<p>注：参数默认值不是传值的，而是每次都重新计算默认值表达式的值（参数默认值是惰性求值）</p>
+<p>通常情况下，定义了参数默认值的参数是函数的尾参数</p>
+<p>有参数的默认值都是尾参数，除非显示输入undefined，如果传入的是undefined，将触发默认值，null不行</p>
+<p>设置了默认值之后，或者默认值不是尾参数，函数的length不在计入后面的参数（length属性失真）</p>
+<p>一旦设置了参数的默认值，函数在进行初始化的时候，参数会形成一个单独的作用域，等到初始化结束的时候，这个作用域消失（不设置参数默认值的时候不会出现）</p>
+<p>利用参数默认值可以指定某一个参数不得省略，若省略则报错</p>
+<p>可以将参数默认值设置为undefined，表示这个参可以省略</p>
+<p>rest参数（形为“…变量名”），用于获取函数多余的参数</p>
+<p>函数的name属性返回函数的函数名</p>
+<p>箭头函数<br>ES6简明笔记中有</p>
+<p>注：</p>
+<p>箭头函数可以嵌套箭头函数</p>
+<h2 id="六、数组的扩展"><a href="#六、数组的扩展" class="headerlink" title="六、数组的扩展"></a>六、数组的扩展</h2><p>扩展运算符 （ . . . ）</p>
+<p>主要用于函数调用</p>
+<p>扩展运算符 后可以放表达式</p>
+<p>如果扩展运算符后面是一个空数组，则不产生任何效果</p>
+<p>可以合并数组</p>
+<p>可以与结构赋值结合起来生成数组</p>
+<p>若扩展运算符用于数组，只能放在参数的最后一位，否则报错</p>
+<p>可以将字符串转为真正的数组</p>
+<p>Array.from（）：将伪数组（两类对象：类似于数组的对象）转换为真正的数组</p>
+<p>Array.of（一组值）：将一组数转换为数组，若没有参数，则返回空数组</p>
+<p>copyWithin（）：在当前数组内部将指定位置的成员复制到其他地方，然后返回数组（会修改数组）</p>
+<p>​ 接受3个参数</p>
+<p>target（必选）：从该位置开始替换数据<br>start（可选）：从该位置开始读取数据，默认值为0，如果为负数，表示倒数<br>end（可选）：到该位置停止读取数据，默认等于数组长度，若为负，表示倒数<br>fill（）：用于填充数组</p>
+<p>​ 参数1（必填）：用于填充的给定值</p>
+<p>​ 参数2（可选）：填充的起始位置</p>
+<p>​ 参数3（可选）：填充的结束位置</p>
+<p>entries（）、keys（）、value（）用于遍历数组</p>
+<p>entries（）：对键值对的遍历</p>
+<p>keys（）：对键名的遍历</p>
+<p>values（）：对键值的遍历</p>
+<p>includes（）：表示某个数组是否包含给定的值，返回一个布尔值</p>
+<p>​ 参数1：给定值</p>
+<p>​ 参数2：搜索的起始位置，默认为0，若为负数，则表示倒数的位置，如果这时大于数组长度，则会重置为从0开始</p>
+<p>数组的空位<br>数组的空位值数组的某一个位置没有任何值（空值不是undefined）</p>
+<p>Array.from（）会将数组的空位转换成为undefined</p>
+<p>扩展运算符也会将空位转为undefined</p>
+<p>copyWithin（）会将空位一起复制</p>
+<p>fill（） 会将空位视为数组正常的位置</p>
+<h2 id="七、对象的扩展"><a href="#七、对象的扩展" class="headerlink" title="七、对象的扩展"></a>七、对象的扩展</h2><p>ES6允许直接写入变量和函数作为对象的属性和方法</p>
+<p>在对象中可只写属性名，不写属性值</p>
+<p>可直接用标识符作为属性名，也可将表达式放在方括号内作为属性名（字面量定义）</p>
+<p>Object.is（）：比较两个值是否严格相等，与严格相等运算符（&#x3D;&#x3D;&#x3D;）的行为基本一致（注：有两个不同之处1：+0不等于 -0、2：NaN等于自身）</p>
+<p>Object.assign（）：将源对象的所有可枚举属性复制到目标对象</p>
+<p>​ 第一个参数是目标对象，后面的参数是源对象</p>
+<p>注：</p>
+<p>只有一个参数，会返回改参数<br>若改参数不是对象，会先转换为对象，然后返回<br>由于undefined和null无法转换为对象，所以人工将它们作为参数就会报错<br>其他类似的值（数值、布尔）不在首参也不会报错，但是除了字符串会议数组的形式复制到目标对象，其他值都不会产生效果<br>Object.assign（）是浅复制（即源对象的某个属性的值是对象，name目标对象复制得到的是这个对象的引用）<br>（一）对象的可枚举性<br>for…in循环：只遍历对象自身和继承的可枚举属性</p>
+<p>Object.keys（）：返回对象自身的所有可枚举属性的键名</p>
+<p>JSON.Stringify（）：只串化对象自身的可枚举属性</p>
+<p>Object.assign（）：将源对象的所有可枚举属性复制到目标对象</p>
+<p>注：所有class的原型的方法时不可枚举的</p>
+<p>（二）属性的遍历<br>for…in：循环遍历对象自身和继承的可枚举属性（不包含Symbol属性）</p>
+<p>Object.keys（obj）：返回一个数组，包含对象自身的（不含继承的）所有可枚举属性（不包含symbol属性）</p>
+<p>Object.getOwnPropertyNames（obj）：返回一个数组，包含对象自身的所有属性（不含Symbol，但是含有不可枚举属性）</p>
+<p>Object.getOwnPropertySymbols（obj）：返回一个数组，包含对象自身的所有Symbol属性</p>
+<p>Reflect.ownKeys（obj）：返回一个数组，包含对象自身的所有属性，不管属性名是Symbol还是字符串，也不管是否可枚举</p>
+<p>以上5中均遵循属性遍历次序规则</p>
+<p>首先遍历所有属性名为数值的属性，按照数字排序<br>其次遍历所有属性名为字符串的属性，按照生成时间排序<br>最后遍历所有属性名为Symbol的属性，按照生成时间排序<br>（三）_ _ proto _ _属性<br>用于读取或者设置当前对象的prototype属性</p>
+<p>缺点：兼容性和语义都不是很好</p>
+<p>ES6使以下三种替换它</p>
+<p>Object.setPrototypeOf（obj）：用来设置一个对象的prototype属性，返回参数对象本身</p>
+<p>​ 参数：第一个参数若不是对象，则会自动转化为对象（undefined和null时会报错）</p>
+<p>Object.getPrototypeOf（）：用于读取一个对象的prototype属性</p>
+<p>​ 参数：参数若不是对象，则会自动转化为对象（undefined和null时会报错）</p>
+<p>Object.reate（）：生成对象</p>
+<p>（四）对象的解构赋值和扩展运算符混用<br>对象的解构赋值会将所有的键值对都复制到新的对象上面</p>
+<p>解构赋值必须是最后一个参数，否则会报错</p>
+<p>解构赋值不会复制继承自原型对象的属性</p>
+<p>扩展运算符可用于合并两个对象</p>
+<p>若自定义的属性放在扩展运算符后面，则扩展运算符内部有同名属性会被覆盖</p>
+<p>若把自定义属性放在扩展运算符前面，则变成了设置新对象的默认属性</p>
+<p>若扩展运算符的参数是undefined或者null，则这两个值会被忽略，不会报错</p>
+<p>若扩展运算符的参数对象之中有取值函数get，则这个函数会被执行</p>
+<p>（四）Object.getOwnPropertyDescriptors（obj）<br>Object.getOwnPropertyDescriptor（obj）：用于返回某个对象属性的描述对象</p>
+<p>Object.getOwnPropertyDescriptors（obj）：返回指定对象所有自身属性（非继承属性）的描述对象</p>
+<p>主要是为了解决Object.assign（）无法正确复制get属性和set属性</p>
+<p>（五）Null传导运算符<br>四中用法</p>
+<p>obj?.prop ：读取对象属性<br>obj?.[expr]：读取对象属性<br>func.{…args}：函数或对象方法的调用<br>new C ?.{…args}：构造函数的调用</p>
+<h2 id="八、Symbol"><a href="#八、Symbol" class="headerlink" title="八、Symbol"></a>八、Symbol</h2><p>新的数据类型，表示独一无二的值</p>
+<p>通过symbol函数生成</p>
+<p>let s&#x3D;Symbol();<br>1<br>对象属性名的两种表示方法：1、原有字符串表示。2、Symbol表示</p>
+<p>Symbol可接受一个字符串作为参数，表示对Symbol实例的描述，主要是为了在控制台输出，或者是转为字符串时比较容易区分</p>
+<p>如果Symbol的参数是一个对象，则会调用toString方法将其转换成为字符串，然后生成一个Symbol值</p>
+<p>Symbol值不能与其他类型的值进行运算，否则会报错</p>
+<p>Symbol值可以显式的转为字符串</p>
+<p>let sym&#x3D;Symbol(‘My Symbol’);<br>String(sym);	&#x2F;&#x2F;‘Symbol(My Symbol)’<br>sym.toString();	&#x2F;&#x2F;‘Symbol(My Symbol)’<br>1<br>2<br>3<br>Symbol值也可以转换成为布尔值，但是不能转换为数值</p>
+<p>let sym&#x3D;Symbol();<br>Boolean(sym);	&#x2F;&#x2F;true<br>!sym;			&#x2F;&#x2F;false<br>Number(sym);	&#x2F;&#x2F;TypeError<br>1<br>2<br>3<br>4<br>Symbol值作为对象的属性名时不能使用点运算符，只能用方括号</p>
+<p>在对象内部使用Symbol值定义属性时，也只能用方括号</p>
+<p>let sym&#x3D;Symbol();<br>let a&#x3D;{};<br>a.sym&#x3D;’Hello’;<br>a[sym];		&#x2F;&#x2F;undefined<br>s[‘sym’];	&#x2F;&#x2F;‘Hello’<br>1<br>2<br>3<br>4<br>5<br>Symbol类型的值还可以定义一组常量，保证这些常量都是不相等的</p>
+<p>（一）属性名遍历<br>Object.getOwnPropertySymbols（）：返回一个数组，成员是当前对象的所有作用属性名的Symbol值</p>
+<p>Reflect.ownKeys（）：以数组的形式返回所有键名，包括常规键名和S也Symbol键名</p>
+<p>以Symbol值作为属性名的属性不会被常规方法遍历得到（可为对象定义一些非私有但又希望只用于内部的方法）</p>
+<p>Symbol.for（）：可重新使用同一个Symbol值</p>
+<p>​ 参数：一个字符串</p>
+<p>​ 作用：搜索有没有以该参数作为名称的Symbol值，若有则返回这个Symbol值，否则就新建并返回一个以该字符串为名称的Symbol值</p>
+<p>Symbol.for()与Symbol都可以生成新的Symbol</p>
+<p>区别：前者会被登记在全局环境中供搜索，后者不会</p>
+<p>Singleton模式：调用一个类，并且在任何时候都返回同一个实例</p>
+<p>（二）内置的Symbol值<br>对象的Symbol.hasInstance属性指向一个内部方法，对象使用instanceof运算符是会调用这个方法，判断该对象是否为某个构造函数的实例</p>
+<p>class Myclass{<br>    <a href="foo">Symbol.hanInstance</a>{<br>        return foo instanceof Array;<br>    }<br>}<br>[1,2,3] instanceof new Myclass;	&#x2F;&#x2F;true<br>1<br>2<br>3<br>4<br>5<br>6<br>对象的Symbo.isConcatSpreadable属性等于一个布尔值，表示该对象在使用Array.prototype.concat（）时是否可以展开</p>
+<p>let arr1&#x3D;[‘c’,’d’];<br>[‘a’,’b’].concat(arr1,’e’);		&#x2F;&#x2F;[‘a’,’b’,’c’,’d’,’e’]<br>arr1[Symvol.isConcatSpreadable]	&#x2F;&#x2F;undefined</p>
+<p>let arr2&#x3D;[‘c’,’d’];<br>arr2[Symbol.isConcatSpreadable]&#x3D;false;<br>[‘a’,’b’].concat(arr2,’e’);		&#x2F;&#x2F;[‘a’,’b’,[‘c’,’d’],’e’]<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>数组的默认行为是可以展开的，Symbol.isConcatSpreadable属性等于undefined或者true，都可以</p>
+<p>类似于数组的对象也可以展开，但它的Symbol.isConcatSpreadable属性默认为false，必须手动打开、</p>
+<p>let obj&#x3D;{length:2,0:’c’,1:’d’};<br>[‘a’,’b’].concat(obj,’e’);		&#x2F;&#x2F;[‘a’,’b’,obj,’e’]</p>
+<p> obj[Symbol,isConcatSpreadable]&#x3D;true;<br>[‘a’,’b’].concat(obj,’e’);		&#x2F;&#x2F;[‘a’,’b’,’c’,’d’,’e’]<br>1<br>2<br>3<br>4<br>5<br>对于一个类而言，Symbol.isConcatSpreadable属性必须写成实例的属性</p>
+<p>（1）Symbol.species<br>对象的Symbol.species属性指向当前对象的构造函数，使用这个函数返回的函数来创造新的实例对象</p>
+<p>定义Symbol.species属性要用get读取数据</p>
+<p>class Array extends Array{<br>    &#x2F;&#x2F;覆盖父类Array的构造函数<br>    static get <a href="">Symbol.species</a>{return Array;}<br>}<br>1<br>2<br>3<br>4<br>（2）Symbol.match<br>对象的Symbol.match属性指向一个函数，当执行str.match（obj）时，如果该属性存在，则会调用它的返回值</p>
+<p>（3）Symbol.replace<br>对象的Symbol.replace属性指向一个方法，当对象被String.prototype.replace方法调用时会返回改方法的返回值</p>
+<p>（4）Symbol.split<br>对象的Symbol.split属性指向一个方法，当对象被String.prototype.split方法调用时会返回改方法的返回值</p>
+<p>（5）Symbol.iterator<br>对象的Symbol.iterator属性指向该对象默认的遍历方法</p>
+<p>（6）Symbol.toPrimitive<br>对象的Symbol.toPrimitive属性指向一个方法，对象在转化为原始数据类型时会调用这个方法，返回该对象的原始数据类型</p>
+<p>​ 参数：字符串，表示当前运算模式</p>
+<p>Number：需要转化为数值<br>String：需要转化为字符串<br>Default：可转化为数组，也可转化为字符串<br>（7）Symbol.toStringTag<br>对象的Symbol.toStringTag属性指向一个方法，在对象上调用Object.prototype.toString（）时，如果这个属性存在，其返回值会出现在toString方法返回值的字符串中，表示对象的类型</p>
+<p>（8）Symbol.unscopables<br>对象的Symbol.unscopables属性指向一个对象，指定了使用with关键字时，那些属性会被with环境排除</p>
+<p>九、Set和Map<br>（一）Set<br>类似于数组，其成员唯一，不重复</p>
+<p>Set本身是一个构造函数，用于生产Set数据结构</p>
+<p>let s&#x3D;new Set();<br>1<br>Set函数可以接受一个数组，作为参数，用于初始化</p>
+<p>向Set加入值时不会发生数据转换，即1和’1’为不同的值</p>
+<p>在Set内部，两个NaN相等</p>
+<p>（1）Set实例的属性<br>Set.prototype.Constructor（）：构造函数，就是Set（）<br>Set.prototype.size（）：返回Set实例成员总数<br>add（value）：添加值，返回Set本身<br>delete（value）：删除值，返回一个布尔值，表删除是否成功<br>has（value）：返回布尔值，表参数是否为Set成员<br>clear（）：清除所有成员，无返回值<br>（2）遍历<br>keys（）：返回键名的遍历器<br>values（）：返回键值的遍历器<br>entries（）：返回键值对的遍历器<br>forEach（function（）{}）：使用回调函数遍历每个成员，无返回值（可加参2，表示绑定的this对象）<br>Set的遍历顺序就是插入顺序</p>
+<p>若想同步的改变原来的Set结构，可利用原Set映射出一个新的结构再复制给原Set结构，或者使用Array.from（）</p>
+<p>（二）WeaKSet<br>与Set类似，表不重复的集合</p>
+<p>与Set的区别</p>
+<p>WeakSet的成员只能是对象，不能是其他值</p>
+<p>WeakSet中的对象都是弱引用，即垃圾回收机制不考虑WeakSet对该对象的引用</p>
+<p>WeakSet的成员不能引用，因为其随时可能消失</p>
+<p>WeakSet本生是一个构造函数，使用生成WeakSet数据结构</p>
+<p>let w &#x3D; new WeakSet();<br>1<br>可接受一个数组或者类似于数组的对象作为参数来初始化</p>
+<p>WeakSet的方法<br>WeakSet.prototype.add（value ）：添加新成员<br>WeakSet.prototype.delete（value）：删除指定成员<br>WeakSet.prototype.has（value）：返回布尔值，表指定值是否在WeakSet实例中<br>WeakSet无size属性，无法遍历其成员</p>
+<p>（三）Map<br>类似于对象，也是键值组合</p>
+<p>其键的范围不限于字符串，可为各种数据类型的值（包括对象）均可当做键</p>
+<p>使用Map（）构造函数生成</p>
+<p>let m &#x3D; new Map();<br>1<br>Map可接受一个数组作为参数，其数组成员为一个个表示键值对的数组</p>
+<p>若一个键多次赋值，则后面的覆盖前面的值</p>
+<p>若读取一个未知的键，则返回undefined</p>
+<p>Map的键实际上绑定的是地址值，只要地址不同，即视为两个键（解决了同名属性碰撞的问题）</p>
+<p>（1）Map实例的属性方法<br>1、size（）<br>返回Map结构的成员总数</p>
+<p>2、set（key，value）<br>设置key值所对应的键，然后返回Map结构</p>
+<p>若key已经有值，则赋值更新，否则新生成该键值</p>
+<p>3、get（key）<br>获取key对应的值，若找不到key则返回undefined</p>
+<p>4、has（key）<br>返回一个布尔值，表示ley是否在Map结构中</p>
+<p>5、delete（key）<br>删除某个键，删除成功则返回true，反之返回false</p>
+<p>6、clear（）<br>清除所有成员，无返回值</p>
+<p>（2）遍历<br>keys（）：返回键名的遍历器<br>values（）：返回键值的遍历器<br>entries（）：返回键值对的遍历器<br>forEach（function（）{}）：遍历Map所有成员<br>Map的遍历顺序就是插入顺序</p>
+<p>（四）Map与其他数据类型的转化<br>（1）Map转数组<br>Map转化为数组最快的方法时结合使用扩展运算符（ . . . ）</p>
+<p>（2）数组转Map<br>将数组传入构造函数即可</p>
+<p>（3）Map转对象<br>若Map所有键都是字符串，则可以转为对象</p>
+<p>function strMapToObj(strMap){<br>    let obj &#x3D; Object.create(null);<br>    for (let [k,v] of strMap){<br>        obj[k]&#x3D;v;<br>    }<br>    return obj;<br>}<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>（4）对象转Map<br>function objToStrMap(obj){<br>    let strMap&#x3D;new Map();<br>    for(let k of Object.keys(obj)){<br>        strMap.set(k.obj[k]);<br>    }<br>    return strMap;<br>}<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>（5）Map转JSON<br>情况一：Map键名都是字符串，可以转为对象JSON</p>
+<p>function StrMapToJson(StrMap){<br>    reutrn JSON.stringify(strMapToObj(strMap));<br>}<br>1<br>2<br>3<br>情况二：Map键名中含有非字符串，转为数组JSON</p>
+<p>function mapToArrayJson(map){<br>    return JSON.stringify(…map);<br>}<br>1<br>2<br>3<br>（6）JSON转Map<br>正常情况所有键名都是字符串</p>
+<p>function jsonToStrMap(jsonStr){<br>    return objToStrMap(JSON.parse(jsonStr));<br>}<br>1<br>2<br>3<br>特殊情况：在整个JSON就是一个数组，且数组成员本身又是由一两个成员的数组，此时应该一一对应的转为Map（数组转为JSON的逆操作）</p>
+<p>function jsonToMap(jsonStr){<br>    return new Map(JSON.parse(jsonStr));<br>}<br>1<br>2<br>3<br>（五）WeakMap<br>与Map结构类似，也用于生成键值对的集合</p>
+<p>通过WeakMap函数生成</p>
+<p>let wMap &#x3D; new weakMap();<br>1<br>可使用set方法添加成员</p>
+<p>可接受一个数组，作为构造函数的参数</p>
+<p>WeakMap与Map的区别<br>WeakMap只接受对象作为键名（null除外），不接受其他类型的值作为键名（即数组和Symbol值作为WeakMap的键名时会报错）</p>
+<p>WeakMap的键名所指向的对象不计入垃圾回收机制（会自动被移除，有助于防止内存泄漏）</p>
+<p>WeakMap没有遍历操作，也，没有size属性</p>
+<p>无法清空，即没有clear（）方法</p>
+<p>WeakMap的语法<br>get（）<br>set（）<br>has（）<br>delete（）<br>十、proxy<br>用于某些操作的默认行为，等同于在语言层面做出修改</p>
+<p>可理解为在目标对象前设置的一个“拦截”层，外界访问目标对象时，先通过拦截层，可对外界的访问进行过滤和改写</p>
+<p>使用Proxy构造函数，生成proxy实例</p>
+<p>let p &#x3D; new Proxy(target,handler);<br>1<br>target：目标对象<br>handler：用来定制拦截行为的对象（若不设置任何拦截，等同于直接通向原对象）<br>可将proxy对象设置到object.proxy属性，可在object对象上直接调用</p>
+<p>Proxy实例也可作为其他对象的原型对象</p>
+<p>Proxy的所有拦截操作<br>（1）get（target，propKey，receiver）<br>拦截对象某个属性的读取，最后一个参数为可选对象</p>
+<p>若访问目标对象不存在的属性，会抛出一个错误</p>
+<p>若没有这个拦截函数，访问不存在的属性只会返回undefined</p>
+<p>get方法可以继承</p>
+<p>可以利用proxy将get转变为执行某个函数，实现属性的链式操作</p>
+<p>（2）set（target，propKey，value，receiver）<br>拦截对象的设置，返回一个布尔值</p>
+<p>利用set方法可以实现数据绑定（即每当对象发生变化，自动跟新DOM）</p>
+<p>若目标对象的某个属性不可配置也不可写，只能返回同样的值，否则报错</p>
+<p>（3）has（target，propKey）<br>拦截propKey in proxy的操作，返回一个布尔值（拦截in运算符）</p>
+<p>若对象不可配置或禁止扩展，则报错</p>
+<p>不判断一个属性是对象自身的还是继承的属性</p>
+<p>拦截对for…,in 永不生效</p>
+<p>（4）deleteProperty（target，propKey）<br>拦截delete proxy[proKey]操作，返回一个布尔值</p>
+<p>若这个方法抛出错误或者返回false，则当前属性无法被delete删除</p>
+<p>目标对昂自身不可配置的属性不能被deleteProperty方法删除，否则报错</p>
+<p>（5）ownKeys（target）<br>拦截Object.getOwnPropertyNames（proxy）、Object.getOwnPropertySymbols（proxy）、Object.keys（proxy），返回一个由目标对象所有自身属性的属性名组成的数组</p>
+<p>返回的数组成员只能是字符串或者Symbol值，</p>
+<p>若有其他类型的值，或返回的根本不是数组，则报错</p>
+<p>若目标对象自身含有不可配置的属性，则改属性必须被ownKeys返回，否则报错</p>
+<p>若目标对象不可扩展，则返回的数组中必须包原对象的所有属性，且不能含有其他属性，否则报错</p>
+<p>注：使用Object.keys（）方法时有三类属性会被ownKeys方法自动过滤</p>
+<p>目标对象上不存在的属性<br>属性名为Symbol值<br>不可遍历的属性<br>（6）getOwnPropertyDescriptor（target，propKey）<br>拦截Object.getOwnPropertyDescriptor（proxy，propKey），返回属性的描述对象或undefined</p>
+<p>（7）defineProperty（target，propKey，PropDesc）<br>拦截Object.defineProperty（proxy，propKey，propDesc）、Object.defineProperties（proxy、propDescs），返回一个布尔值</p>
+<p>若目标对象不可扩展，则defineProperty不能增加目标对象中不存在的属性，否则报错</p>
+<p>若目标对象中某个属性不可写或不可配置，则defineProperty不得改变这两个设置</p>
+<p>（8）preventExtensions（proxy）<br>拦截Object.preventpreventExtensions（proxy），返回一个布尔值，否则会被自动转为布尔值</p>
+<p>限制：只有目标对象不可扩展时，proxy.prevrntExtensions才能返回true，否则报错</p>
+<p>解决方案：可在proxy.prevrntExtensions（）方法中调用一次Object.preventpreventExtensions（）</p>
+<p>let p &#x3D; new proxy({},{<br>    preventExtensions:function(target){<br>        Object.preventpreventExtensions(target);<br>        return true;<br>    }<br>})<br>1<br>2<br>3<br>4<br>5<br>6<br>（9）getPrototypeOf（target）<br>拦截Object.getPrototype（proxy），返回一个对象或者null，否则报错</p>
+<p>若目标对象时一个函数，name还有两种额外操作可以拦截</p>
+<p>若目标对象不可扩展，则返回目标对象的原型对象</p>
+<p>主要用于拦截对象原型</p>
+<p>Object.prototype._ _ proto _ _<br>Object.prototype.isPrototypeOf（）<br>Object.getPrototypeOf（）<br>Reflect.getPrototypeOf（）<br>instanceof<br>（10）setPrototypeOf（target）<br>拦截Object.setPrototypeOf（），返回一个布尔值，否会被自动转为布尔值</p>
+<p>若目标对象不可扩展，setPrototypeOf（）不得改变目标对象的原型</p>
+<p>（11）isExtensible（target）<br>拦截Object.isExtensible（proxy），返回一个布尔值</p>
+<p>强限制：返回值必须与目标对象的isExtensible属性保持一致，否则报错</p>
+<p>（12）apply（target，object，args）<br>拦截proxy实例，并将其作为函数调用的操作</p>
+<p>拦截函数的调用、call、apply操作</p>
+<p>直接调用Reflect.apply（）也会被拦截</p>
+<p>可接受三个参数：</p>
+<p>目标对象<br>目标对象的上下文对象（this）<br>目标对象的参数数组<br>（13）construct（target，args）<br>拦截Proxy实例作为构造函数调用的操作，比如new proxy（…args）</p>
+<p>拦截new命令</p>
+<p>let handler &#x3D; {<br>    construct (target,args,newTatget){<br>        return new target(…args);<br>    }<br>};<br>1<br>2<br>3<br>4<br>5<br>可接受两个参数</p>
+<p>target：目标对象<br>args：构造函数的参数对象<br>返回一个对象，否则报错</p>
+<p>（14）Proxy.revocable（target，handler）<br>返回一个可取消的proxy实例</p>
+<h2 id="十一、Reflect"><a href="#十一、Reflect" class="headerlink" title="十一、Reflect"></a>十一、Reflect</h2><p>（一）设计目的<br>将Object对象上一些明显属于语言的方法放在Reflect上。（从Reflect对象上可以获取语言内部的方法）<br>修改一些Object方法的返回结果，让其变得合理<br>让Object操作都编程函数行为<br>proxy对象的方法在Reflect上可以找到与之对应的方法<br>（二）静态方法<br>（1）Reflect.get（target，name，receiver）<br>查找并返target对象的那么属性，若没有则返回undefined</p>
+<p>若那么属性部署了读取函数，则读取函数的this绑定receiver</p>
+<p>若第一个参数不是对象，则报错</p>
+<p>（2）Reflect.set（target，name，value，receiver）<br>设置target的name属性等于value</p>
+<p>若name属性设置了赋值函数，则赋值函数的this绑定receiver</p>
+<p>若第一个参数不是对象，则报错</p>
+<p>Reflect.set会触发Proxy.defineProperty拦截</p>
+<p>（3）Reflect.has（obj，name）<br>对应name in obj中的in运算符</p>
+<p>若一个参数不是对象，则Reflect和in都会报错</p>
+<p>（4）Reflect.deletePrototypety（obj，name）<br>删除对象的属性，等同于delete obj[name]</p>
+<p>返回一个布尔值，若删除成功，或删除的属性不存在，则返回true，否则返回false</p>
+<p>（5）Reflect.construct（target，args）<br>等同于new target（…args）</p>
+<p>（6）Reflect.getPrototyprOf（obj）<br>读取对象的 _ _ proto _ _属性，等同于Object.getPrototype（obj）</p>
+<p>两者的区别：若参数不是对象，后者会将其转化为对象再进行，而前者则报错</p>
+<p>（7）Reflect.setPrototypeOf（obj，newProto）<br>设置对象的 _ _ proto _ _属性，返回第一个参数</p>
+<p>等同于Object.setPrototype（obj，newProto）</p>
+<p>若第一个参数不是对象，后者返回第一个对象本身，前者报错</p>
+<p>若第一个参数是null或者undefined，两者均报错</p>
+<p>（8）Reflect.apply（func，thisArgs，args）<br>绑定this对象后执行给定函数</p>
+<p>等同于Function.prototype.apply.call（func，thisArgs，args）</p>
+<p>（9）Reflect.definePropertyOf（target，propertyKey，attribute）<br>为对象定义属性</p>
+<p>等同于Object.definePropertyOf（）</p>
+<p>（10）Reflect.getOwnPropertyDescriptor（target，propertyKey）<br>获得指定属性的描述对象</p>
+<p>等同于Object.getOwnPropertyDescriptor（）</p>
+<p>两者区别：若第一个参数不是对象，则后者不会报错，并返回undefined，而前者抛出错误，表示参数非法</p>
+<p>（11）Reflect.isExtensible（target）<br>返回布尔值，表示当前函数是否可扩展</p>
+<p>等同于Object.isExtensible（）</p>
+<p>若第一个参数不是对象，后者返回false（因为非对象不可扩展），前者报错</p>
+<p>（12）Reflect.preventExtensions（target）<br>使一个对象变为不可扩展的，返回布尔值，表示操作是否成功</p>
+<p>等同于Object.preventExtensions（）</p>
+<p>（13）Reflect.OwnKeys（target）<br>返回对象的所有属性</p>
+<h2 id="十二、promise"><a href="#十二、promise" class="headerlink" title="十二、promise"></a>十二、promise</h2><p>异步编程解决方案</p>
+<p>特点：</p>
+<p>对象状态不受外界影响<br>一旦状态改变之后就不会在变，随时可以获取到这个结果<br>promise对象代表一个异步操作，三种状态：</p>
+<p>Pending：进行中<br>Fulfilled：已成功<br>Rejected：已失败<br>只有异步操作的结果可以决定当前的状态，其他操作均不行</p>
+<p>使用Promise构造函数生成promise实例</p>
+<p>let p &#x3D; new Promise(function(target,reject){});<br>1<br>promise新建后立即执行</p>
+<p>promise接受一个函数作参数，函数的两个参数有JS引擎提供，不用自己部署</p>
+<p>target：异步操作成功时调用，将结果作为参数传出去</p>
+<p>reject：异步操作失败时调用，将报出的错作为参数传出去</p>
+<p>（一）then<br>为promise实例添加状态改变时的回调函数，返回一个新的promise对象实例</p>
+<p>then是定义在原型对象Promise。prototype上的</p>
+<p>可用then分别指定Resolved状态和Rejectd状态的回调函数</p>
+<p>then的参数为两个回调函数，都接受promise对象传出的值为参数</p>
+<p>参1：promise对象状态变为Resolved时调用<br>参2：promise对象状态变为Rejectd时调用（可选）<br>（二）catch<br>指定发生错误时的回调函数</p>
+<p>返回一个新的promise对象（后面可接着调then）</p>
+<p>可获取then指定的回调函数在运行中抛出的错误</p>
+<p>promise的错误会一直向后传递，直到被捕获为止</p>
+<p>若前面的then没有报错，则会跳过catch</p>
+<p>（三）Promise.all（）<br>将多个promise实例包装成一个新的promise实例</p>
+<p>（四）promise.race（）<br>将多个promise实例包装成一个新的promise实例</p>
+<p>（五）promise.resolve（）<br>将现有的对象转为Promise</p>
+<p>若参数是promise实例：则直接返回这个实例</p>
+<p>若参数是thenable对象：则先转成promise对象，在执行thenable对象的then方法</p>
+<p>thenable对象：具有then方法的对象</p>
+<p>若参数不是thenable对象或者不是对象：promise.resolve返回一个新的Promise对象，状态为Resolved</p>
+<p>若不带音任何参数：则返回一个状态为Resolved状态的对象</p>
+<p>（六）promise.reject（）<br>返回一个状态为Rejected的新的promise对象</p>
+<p>（七）附加方法<br>done（）<br>处于回调链尾端，保证抛出任何可能出现的错误</p>
+<p>可像catch那样使用</p>
+<p>有参无参均可，done可捕获到任何可能出现的错误，并向全局抛出</p>
+<p>finally（）<br>指定不管promise对象最后状态如何都会执行的操作</p>
+<p>与done（）的区别：参数为普通的回调函数，不管怎样都必须执行</p>
+<h2 id="十三、Iterato和for…of循环"><a href="#十三、Iterato和for…of循环" class="headerlink" title="十三、Iterato和for…of循环"></a>十三、Iterato和for…of循环</h2><p>（一）Iterator（遍历器）<br>提供接口，完成遍历操作</p>
+<p>作用：</p>
+<p>为各种数据类型提供一个简便统一的访问接口<br>使得数据结构的成员按照某种次序排序<br>提供新的遍历指令：for…of循环<br>Iterator遍历过程</p>
+<p>创建一个指针对象，指向当前数据结构的起始位置（遍历器对象本质是一个指针对象）<br>第一次调用指针对象的next（）方法，将指针指向数据结构的第一个成员<br>第二次使用指针对象的next（）方法，指针就指向数据结构的第二个成员<br>不断调用指针对象的next（）方法，直到指针指向数据结构的结束位置<br>每次调用next（）方法都会返回数据成员的当前信息，即返回一个包含value和done的对象</p>
+<p>value：当前成员的值</p>
+<p>done：布尔值，表遍历是否结束</p>
+<p>next属于移动指针</p>
+<p>for…of循环遍历数据结构十，会自动寻找Iterator接口</p>
+<p>默认Iterato接口部署在数据结构的Symbol.Iterator属性（引用时放在方括号中）</p>
+<p>（数据结构具有Symbol.Iterator属性便认为是可遍历的）</p>
+<p>原生有Iterator接口的有：</p>
+<p>Array<br>Map<br>Set<br>String<br>TypedArray<br>函数的arguments对象<br>NodeList对象<br>其余只有在数据结构（主要是对象）上部署Symbol.Iterator属性才可被for…of循环遍历</p>
+<p>遍历器为线性处理，对于非线性数据结构即为线性转换</p>
+<p>普通对象部署数组的Symbol.Iterator属性没有效果，只有类似与数组的对象可以</p>
+<p>若Symbol.Iterator方法对应的不是遍历器生成函数，JS引擎会报错</p>
+<p>对数组和Set结构进行解构赋值，会默认调用Symbol.Iterator方法</p>
+<p>扩展运算符也会调用默认的Iterator接口</p>
+<p>yield * 后面跟一个可遍历的结构，会调用该结构的接口</p>
+<p>字符为类似数组的对象，也有原生Iterator接口</p>
+<p>（二）遍历对象的return（）、和throw（）<br>return（）和 throw（）为可选的</p>
+<p>（一）return（）<br>若 for … of 提前退出（出错或者有break语句或者contine语句），会调用 return 方法</p>
+<p>若对象在遍历完成前要清理或者释放资源，可以部署 return</p>
+<p>return 返回一个对象</p>
+<p>（二）throw<br>主要配合Generator函数使用，一般遍历对象用不到</p>
+<p>（三）for … of循环<br>for … of 循环内部调用数据结构的 Symbol.Iterator 方法</p>
+<p>for … of 循环可以代替数组的 forEach 方法</p>
+<p>for … in 和 for … of 的区别</p>
+<p>前者只能获取对象的键名，后者允许获取键值</p>
+<p>数组遍历器接口只能返回具有数字索引的属性，for … of 调用遍历器接口</p>
+<p>在遍历Set和Map时：</p>
+<p>遍历顺序为成员添加的顺序<br>Set返回的是一个值，而Map返回一个包含当前Map成员键值和键名的数组<br>对于字符串：for … of 可以正确识别32位UTF-16字符</p>
+<p>对于类似于数组的结构：使用Array.from（）将其转换为数组，是其具有Iterator接口</p>
+<p>对于普通对象：for … of不能直接使用，需要部署Iterator接口才能使用，但是for … in可以正常使用，来遍历键名</p>
+<p>（一）计算生成的数据结构<br>返回遍历器对象的三种方法：</p>
+<p>entries（）：用于遍历[键名，键值]组成的数组（对于数组，键名就是索引值，对于Set键名和键值一样，对于Map的Iterator默认为entries方法）<br>keys（）：用于遍历所有的键名<br>values（）：用于遍历所有的键值<br>（二）for … in 的缺点<br>数组的键名是数字，但是 for … in 循环是以字符串作为键名的，即“0”，“1”，“2”等等<br>for … in 循环可以遍历数字键名，也可以遍历手动添加其他键，甚至包括原型链上的键<br>某些情况，for … in 循环一任意顺序遍历键名<br>（三）for … of 的优点<br>有 for … in 一样简洁的语法，但是没有它的缺点<br>不同于 forEach 语法，可以和 break、contine 和 return 配合使用<br>提供了所有遍历器的统一接口</p>
+<h2 id="十四、Generator函数的语法"><a href="#十四、Generator函数的语法" class="headerlink" title="十四、Generator函数的语法"></a>十四、Generator函数的语法</h2><p>一种异步编程解决方案，封装了多个内部状态</p>
+<p>形式为普通函数，但有两个特征：</p>
+<p>function与函数名之间有一个星号（*）<br>函数体内部使用yield语句定义不同的内部状态<br>Generator函数的调用：函数名加（），返回一个遍历器对象，代表Generator函数的内部指针</p>
+<p>与普通函数的区别：调用Generator函数后，并不执行，返回一个指向内部状态的指针对象（即遍历器对象），接下来调用调用遍历器对象的next方法，使指针移向下一个状态，直到遇到下一条yield语句或者return语句</p>
+<p>Generator函数分段执行，yield语句为暂停执行的标记，next可恢复执行</p>
+<p>每次调用next可返回带有value属性（表示当前内部状态的值，即yield语句后表达式的值）和done属性（布尔值，表示遍历是否结束）</p>
+<p>Generator函数不能和new命令一起使用，否则报错</p>
+<p>利用Generator可在任意对象上部署Iterator接口</p>
+<p>（一）yield表达式<br>遍历器对象next方法的运行逻辑：</p>
+<p>遇到yield语句就暂停执行后面的操作，并将紧跟在yield后的表达式的值作为返回对象的value的值<br>下一调用next方法时在继续向下执行，直到遇到下一个yield语句<br>若没有遇到新的yield语句，则一直运行到函数结束，直到遇到return语句，并将return语句后表达式的值作为返回对象的value属性值<br>若函数没有return语句，则返回对象的value属性值为undefined<br>注：只有调用了next方法的且内部指针指向该语句时才会执行yield语句后面的表达式</p>
+<p>yield与return的区别：每次遇到yield函数暂停执行，下一次会从该位置开始执行，而return不具备位置记忆功能</p>
+<p>若Generator函数无yield语句，则变成了暂缓执行函数</p>
+<p>yield表达式只能用在Generator函数中，否则报错</p>
+<p>yield表达式若用在另一个表达式中必须放在圆括号里</p>
+<p>yield表达式若作为函数参数或者放在赋值表达式的右边，可以不加圆括号</p>
+<p>yield语句无返回值，或者说返回值总是undefined</p>
+<p>（二）next方法的参数<br>next方法可以带有一个参数，该参数会被当做上一条yield语句的返回值</p>
+<p>第一次调用next方法时传入参数无效，除非在Generator函数外部在包一层</p>
+<p>for … of可以自动遍历Generator函数生成的Iterator对象，不需在调用next方法</p>
+<p>（三）Generator.prototype.throw（）<br>可在函数外部抛出一个错误，再由Generator函数以内捕获</p>
+<p>throw（）可以接受一个参数，被catch语句接受</p>
+<p>若Generator函数内部未部署try…catch代码块，则throw抛出的错误有外部的try…catch代码块捕获</p>
+<p>若部署了，则抛出的错误不能影响下一次遍历，否则遍历直接终止</p>
+<p>throw方法在捕获之后会附带的执行下一条yield表达式，即附带执行一次next方法</p>
+<p>若Generator函数执行过程中抛出错误，就不会在执行下去了，返回一个value属性等于undefined、done等于true的对象（JS引擎会认为Generator已经运行结束）</p>
+<p>（四）Generator.prototype.returen（）<br>可返回给定的值，并终结Generator函数的遍历</p>
+<p>若调用return（）无参数，则返回的value的属性为undefined</p>
+<p>若执行Generator函数内部有try…finally代码块，则return会推迟到finally执行完再执行</p>
+<p>（五）yield<em>表达式<br>若yield命令后跟的是一个遍历器对象，则需要在yield后面加一个星号（</em>），表明返回的是一个遍历器对象</p>
+<p>用于在一个Generator函数里面执行另一个Generator函数</p>
+<p>在字符串中：yield语句返回整个字符串，而yield*返回单个字符</p>
+<p>（六）Thunk函数<br>自动执行Generator函数的一种方法</p>
+<p>传值调用：在进入函数体之前先 计算表达式的值，在将表达式的值传入函数</p>
+<p>传名调用：直接将表达式传入函数体内，只有在用到它的时候才求值</p>
+<p>编译器的传名调用是将参数放在一个临时函数（Thunk函数）中，再讲这个临时函数传入函数体</p>
+<p>Thunk函数将多个参数函数替换成只接受一个回调函数作为参数的单参数函数</p>
+<p>任何函数，只要参数有回调函数，就能写成Thunk函数的形式</p>
+<p>（七）co模块<br>用于Generator函数的自动执行</p>
+<p>在Generator函数中传入co函数就会自动执行</p>
+<p>co函数返回一个Promise对象（可用then方法添加回调函数）</p>
+<p>使用co模块的前提：Generator函数的yield命令后面只能是Thunk函数或者Promise对象，或数组或对象的成员全部都是Promise对象</p>
+<p>原理：将两种自动执行函数（Thunk函数和Promise对象）包装成为一个模块</p>
+<p>co函数接受Generator函数作为参数，返回一个Promise对象，在返回的Promise对象中，co先检查参数是否为Generator函数，若是，则执行该函数，得到一个指针对象，然后将内部指针对象的next方法包装成为另一个函数，最后，利用next函数，反复调用自身；若不是，则不返回，并将Promise对象的状态改为resolved</p>
+<p>co支持某些操作同时进行，等到它们全部进行完才进行下一步</p>
+<p>（八）Stream<br>由Node提供的读写数据</p>
+<p>特点：一次只处理数据的一部分，数据被分成很多小部分依次处理</p>
+<p>Stream模式使用EventEmitterAPI释放的三个事件：</p>
+<p>data事件：表下一块数据块已经准备好<br>end事件：表整个“数据流”处理“完成”<br>error事件：发生错误<br>使用Promise.race（）可判断哪个事件最先发生</p>
+<p>只有当data事件最先发生时，才能进入下一个数据块的处理</p>
+<h2 id="十五、async函数"><a href="#十五、async函数" class="headerlink" title="十五、async函数"></a>十五、async函数</h2><p>Generator函数的语法糖</p>
+<p>async函数就是将Generator函数的星号（*）替换为async，将yield替换为await。</p>
+<p>async对Generator的改进：</p>
+<p>Generator函数执行必须靠执行器（co模块），而async子代执行器（与普通函数调用一样）<br>async和await向比yield和星号语义更加清楚<br>co模块规定yield命令后面只能是Thunk函数或者Promise对象，而await后面就可以是Promise对象和原始类型的值（数值、布尔值、字符串，此时为同步操作）<br>async返Promise对象<br>async可以看做由多个异步操作包装成的一个Promise对象，await命令即为内部的then语法糖</p>
+<p>async函数返回一个Promise对象，看使用then添加回调函数，当函数执行时，遇到await就先返回，等到异步操作完成再继续执行后面的语句，返回的Promise对象可以作为await的参数</p>
+<p>async内部return的返回值，会成为then方法回调函数的参数</p>
+<p>async内部抛出的错位会将返回的Promise对象改为reject状态，抛出的错误对象会被catch捕获</p>
+<p>async函数返回的Promise对象必须等到内部所有的await命令后面的Promise对象执行完状态才会改变，触发遇到return语句或者抛出错误，可在await后面加一个catch方法，处理前面的错误</p>
+<p>只有async内部的异步操作完成才会执行then方法指定的回调函数</p>
+<p>若await后面不是一个Promise对象，则会被转成一个状态为resolve的Promise对象</p>
+<p>若await后面的异步操作出错，则async返回的Promise对象被reject</p>
+<p>若有多个await命令，可放在try…catch中</p>
+<p>await命令只能出现在async函数中，否则报错</p>
+<p>若多个请求同时并发执行，可使用Promise.all（）</p>
+<p>for … of 循环用于遍历同步的Iterator接口</p>
+<p>for await … of用于遍历异步的Iterator接口</p>
+<p>async function f(){<br>    for await (const x of creatAsyncIterable([‘a’,’b’])){<br>        console.log(x);<br>    }<br>}<br>&#x2F;&#x2F;a<br>&#x2F;&#x2F;b<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>JS 的四中函数形式：</p>
+<p>普通函数<br>async函数<br>Generator函数<br>异步Generator函数</p>
+<h2 id="十六、Class"><a href="#十六、Class" class="headerlink" title="十六、Class"></a>十六、Class</h2><p>Class：类，对象的模板</p>
+<p>通过class关键字定义类</p>
+<p>class point(x,y){<br>    construct(x,y){<br>        this.x&#x3D;x;<br>        this.y&#x3D;y;<br>    }<br>    fun(){<br>        retuan x+y;<br>    }<br>}<br>let c&#x3D;new point();<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>（一）基本语法<br>类的数据类型就是类，类本身指向构造函数</p>
+<p>定义类时，前面不需要加function，直接把函数定义放进去即可</p>
+<p>类的方法之间不需要用逗号隔开，否则报错</p>
+<p>使用时，直接对类使用new命令，与构造函数用法一样</p>
+<p>与构造函数的区别：</p>
+<p>类必须使用new命令，否则报错</p>
+<p>构造函数不使用new也可以执行</p>
+<p>类的方法时定义在prototype属性上的（除constructor）（Object.assign（）可一次向类添加多个方法）</p>
+<p>在类的实例上调用方法，就是在原型上调用方法</p>
+<p>类内部定义的所有方法都是不可枚举的</p>
+<p>类的属性名可以采用表达式</p>
+<p>construct方法是类的默认方法，通过new命令生成对象实例时自动调用，默认返回实例对象（this）</p>
+<p>一个类必须有construct方法，若没有显式定义，则会默认添加</p>
+<p>类的所有实例都构想一个原型对象。可使用_ _ proto _ _属性为类添加方法</p>
+<p>实例的属性除非显式定义在其本身（即this对象）上，否则都是定义在原型Class上</p>
+<p>类不存在变量提升</p>
+<p>设置私有方法：</p>
+<p>在命名上加以区别<br>将所有私有方法移除模块（模块内的方法对外可见）<br>将私有方法命名为Symbol值<br>私有属性：在属性名前加#，表私有属性，可初始化</p>
+<p>私有属性和实例的属性可以同名</p>
+<p>类的内部若含有this，将默认指向类的实例，（一旦单独使用，很可能报错，可在构造函数中绑定this或者使用箭头函数或者使用Proxy在获取方法时候绑定this）</p>
+<p>class的name属性返回紧跟在class关键字后面的类名</p>
+<p>在class的某个方法前面加上*，表示该方法为Generator函数</p>
+<p>静态方法：在class某个方法前面加上static关键字，表示该方法不会被继承，而是直接通过类调用</p>
+<p>类相当于实例的原型，在类中定义的方法都会被实例继承，除非加上static关键字</p>
+<p>若在实例上调用静态方法，会抛错误，表示不存在该方法</p>
+<p>父类的静态方法可被子类继承</p>
+<p>静态方法也可从super对象上调取</p>
+<p>注：class内部只有静态方法，没有静态属性</p>
+<p>new.target属性可用于确定构造函数是怎么调用的</p>
+<p>返回new命令所用的构造函数，若构造函数不是通过new调用的，则返回undefined</p>
+<p>子类继承父类时new.target会返回子类</p>
+<p>在函数外部使用new.target会报错</p>
+<p>（二）Class的继承<br>Class可通过extends关键字实现继承</p>
+<p>子类没有自己的this对象，而是继承父类的this对象在对其给予加工</p>
+<p>Object.getPrototypeOf（）：用于从子类上获取父类（可用于判断一个类是否继承了另一个类）</p>
+<p>（一）super关键字<br>（1）super作为函数调用时代表父类的构造函数</p>
+<p>ES6要求子类的构造函数必须执行一次super函数，否则报错</p>
+<p>做函数时，super（）只能出现在子类的构造函数中，用在其他地方则报错</p>
+<p>（2）super做对象时在普通方法中指向父类的原型对象</p>
+<p>在静态方法中指向父类（因此定义在父类实例上的方法或属性无法通过super调用）</p>
+<p>通过super调用父类的方法时，super会绑定子类的this</p>
+<p>若属性定义在父类的原型对象上，则super可以获取到</p>
+<p>使用super时必须显式指定是作为对象还是函数，否则报错</p>
+<p>（二）类的prototype和 _ _ proto _ _<br>子类的 _ _ proto _ _ 属性表示构造函数的继承，总是指向父类<br>类的prototype属性的 _ _ proto _ _属性表示方法的继承，总是指向父类的prototype属性<br>子类实例的 _ _ proto _ _ 属性的 _ _ proto _ _ 属性指向父类实例的 _ _ proto _ _ 属性</p>
+<p>即子类的原型的原型是父类的原型，可通过子类实例的 _ _ proto _ _ . _ _ proto _ _ 属性来修改父类实例的行为</p>
+<p>extends关键字可以继承类，也可以继承原生的构造函数</p>
+<h2 id="十七、修饰器"><a href="#十七、修饰器" class="headerlink" title="十七、修饰器"></a>十七、修饰器</h2><p>（一）类的修饰<br>修饰器Decorator（）：用于修改类的行为</p>
+<p>可接受三个参数：</p>
+<p>参1：修饰的目标对象<br>参2：要修饰的属性名<br>参3：该属性的描述对象<br>修饰器有注释作用</p>
+<p>若一个方法有多个修饰器，则该方法会从外到内进入修饰器，然后由内向外执行</p>
+<p>修饰器只能用于类和类的方法，不能用于函数，因为存在函数提升</p>
+<p>（二）常见修饰器<br>@autobind：使得方法中的this对象绑定原始对象</p>
+<p>@readonly：使得属性或方法不可写</p>
+<p>@override：检查子类的方法是否正确覆盖了父类的同名方法，若不正确则报错</p>
+<p>@deprecate（别名：@deprecated）：在控制台输出一条警告，表示该方法将废除</p>
+<p>@supperssWarnings：抑制decorated修饰器导致的console.warn（）调用，但是异步调用发出的代码除外</p>
+<h2 id="十八、Module"><a href="#十八、Module" class="headerlink" title="十八、Module"></a>十八、Module</h2><p>模块加载方案：</p>
+<p>CommonJS：用于服务器</p>
+<p>AMD：用于浏览器</p>
+<p>ES6模块，通过export命令显式指定输出的代码，在通过import命令输入</p>
+<p>ES6模块采用严格模式，主要由以下限制：</p>
+<p>变量必须先声明，再使用<br>函数的参数不能同名属性，否则报错<br>不能使用with语句<br>不能对只读属性赋值，否则报错<br>不能使用前缀0表示八进制，否则报错<br>不能删除不可删除的属性，否则报错<br>不能删除变量delete prop，会报错，只能删除属性delete global [ prop ]<br>eval不会在它的外层作用域引入变量<br>eval和arguments不能被重新赋值<br>arguments不会自动反应函数参数的变化<br>不能使用arguments.callee<br>不能使用arguments.caller<br>禁止this指向全局对象<br>不能使用fn.caller和fn.arguments获取函数的堆栈<br>增加了保留字（protected、static和interface）<br>模块功能主要有import和export组成</p>
+<p>（一）export<br>规定模块的对外接口（规定的是对外的接口，必须与模块内部变量一一对应，否则报错）</p>
+<p>可输出变量、函数、类，可使用as关键字重命名</p>
+<p>可出现在模块任意位置，只要处于模块顶层即可</p>
+<p>若处于块级作用域，则报错</p>
+<p>（二）import<br>输入其他模块提供的功能</p>
+<p>可出现在模块任意位置，只要处于模块顶层即可</p>
+<p>若处于块级作用域，则报错</p>
+<p>import后面可加一个from指定模块文件的位置</p>
+<p>import有提升效果，会提升到整个模块的头部并首先执行</p>
+<p>import为静态执行，不能使用表达式和变量，只有在运行时才能得到语法结构</p>
+<p>若多次重复执行用一句import语句，只会执行一次，不会多次执行</p>
+<p>import是Singleton模式（调用一个类，并在任何时候都返回一个实例）</p>
+<p>可使用export default为模块指定默认输出（只能用一次）</p>
+<p>模块也可以继承</p>
+<p>(三)加载<br>浏览器在加载ES6模块是，使用</p>
+<script type="module" src="... .js"></script>
+<p>1<br>defer和async的区别：defer渲染完在执行，async下载完就执行</p>
+<p>若有多个defer脚本，则按照页面出现的顺序加载</p>
+<p>而多个async脚本不能保证加载顺序</p>
+<p>ES6模块与CommonJS模块的差异：</p>
+<p>CommonJS模块输出的是值的复制，而ES6模块输出的是值的引用<br>CommonJS模块是运行时加载，ES6时编译时输出接口<br>CommonJS加载的是一个对象，只有在脚本运行结束时才会生成</p>
+<p>CommonJS模块输出的是值的复制，一旦输出一个值，模块内部就再也影响不到这个值</p>
+<p>CommonJS模块加载原理<br>require命令在第一次加载脚本的时候会执行整个脚本，然后在内存中生成一个对象，即：</p>
+<p>{<br>    id:’…’,		&#x2F;&#x2F;模块名<br>    export:{…},	&#x2F;&#x2F;模块输出的各个接口<br>    loaded:true,	&#x2F;&#x2F;布尔值，表模块执行的脚本是否执行完毕<br>    …<br>}<br>1<br>2<br>3<br>4<br>5<br>6<br>十九、编程风格<br>let完全取代var（let无副作用）</p>
+<p>const优于let的原因：</p>
+<p>const提醒这个变量不可变<br>const符合函数式编程思想，运算不改变值，只是新建值，有利于分布式运算<br>JS编译器会对const优化处理，有利于提高程序的运行效率<br>let和const的本质区别是编译器内部处理不同</p>
+<p>静态字符串一律使用单引号或者反引号，不使用双引号，动态字符串使用反引号</p>
+<p>使用数组成员对变量赋值时，优先使用解构赋值</p>
+<p>若函数的参数为对象的成员，优先使用解构赋值</p>
+<p>若函数有多个返回值，优先使用解构赋值</p>
+<p>单行定义对象，最后一个成员不以逗号结尾</p>
+<p>多行定义对象，最后一个成员要以逗号结尾</p>
+<p>若对象的属性名为动态的，可在创造对象时使用属性表达式定义</p>
+<p>使用扩展运算符（ . . . ）复制数组</p>
+<p>立即执行的函数写为箭头函数形式</p>
+<p>在函数体内使用rest运算符（ . . . ）代替arguments变量</p>
+<p>使用Class代取prototype操作</p>
+<p>用extends继承</p>
+<p>使用import代替require：</p>
+<p>import {function1,function2}from ‘Module’;<br>1<br>使用export 代替module.exports：</p>
+<p>import React from ‘react’;</p>
+<p>class Bread extends React.Compont{<br>    render(){<br>        return ;<br>    }<br>}<br>export default Bread;<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>若模块只有一个输出值，则需使用export default</p>
+<p>不能模块中使用通配符</p>
+<p>若模块默认输出一个函数，则函数名首字母需小写</p>
+<p>若模块默认输出一个对象，则对象名首字母需大写</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://zyhlovewwh.love">邹宇航</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zyhlovewwh.love/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/">https://zyhlovewwh.love/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zyhlovewwh.love" target="_blank">邹宇航の快乐小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://source.fomal.cc/img/default_cover_5.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_6.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机应用22302</div></div></a></div><div class="next-post pull-right"><a href="/2023/01/03/2023-1-3-%E9%82%B9%E5%AE%87%E8%88%AA%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC-%E5%89%AF%E6%9C%AC-2/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_4.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">学习目标</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.fomal.cc/assets/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">邹宇航</div><div class="author-info__description">个人小站</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zouyuhang233"><i class="fab fa-github"></i><span>前往小家...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zouyuhang233" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2151203112@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81Let%E5%92%8CConst"><span class="toc-text">一、Let和Const</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-text">二、解构赋值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%89%A9%E5%B1%95"><span class="toc-text">三、字符串的扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%95%B0%E5%80%BC%E7%9A%84%E6%89%A9%E5%B1%95"><span class="toc-text">四、数值的扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95"><span class="toc-text">六、数组的扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95"><span class="toc-text">七、对象的扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81Symbol"><span class="toc-text">八、Symbol</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%80%E3%80%81Reflect"><span class="toc-text">十一、Reflect</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%BA%8C%E3%80%81promise"><span class="toc-text">十二、promise</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%89%E3%80%81Iterato%E5%92%8Cfor%E2%80%A6of%E5%BE%AA%E7%8E%AF"><span class="toc-text">十三、Iterato和for…of循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E5%9B%9B%E3%80%81Generator%E5%87%BD%E6%95%B0%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-text">十四、Generator函数的语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%BA%94%E3%80%81async%E5%87%BD%E6%95%B0"><span class="toc-text">十五、async函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E5%85%AD%E3%80%81Class"><span class="toc-text">十六、Class</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%83%E3%80%81%E4%BF%AE%E9%A5%B0%E5%99%A8"><span class="toc-text">十七、修饰器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E5%85%AB%E3%80%81Module"><span class="toc-text">十八、Module</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By 邹宇航</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
