@@ -11,6 +11,18 @@
         <content type="html"><![CDATA[<h2 id="第一次更新-2023年1月3日"><a href="#第一次更新-2023年1月3日" class="headerlink" title="第一次更新 2023年1月3日"></a>第一次更新 2023年1月3日</h2><p>(一) 使用hexo框架,butterfly主题,node环境,git,github存储,vercel部署的个人博客网站<br>(二) 实现功能</p><ol><li>搜索框 实时搜索</li><li>2d看板娘 点击可以触发互动</li><li>文章发布 实时更新网站文章信息</li></ol><h2 id="第二次更新-2023年1月4日"><a href="#第二次更新-2023年1月4日" class="headerlink" title="第二次更新 2023年1月4日"></a>第二次更新 2023年1月4日</h2><ol><li>实现页面一图流</li><li>页脚添加了Github徽标与计时器</li></ol><h2 id="第三次更新-2023年1月4日"><a href="#第三次更新-2023年1月4日" class="headerlink" title="第三次更新 2023年1月4日"></a>第三次更新 2023年1月4日</h2><ol><li>分类磁贴</li><li>置顶轮播图</li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> 更新日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 关于网站 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -24,6 +36,18 @@
         <content type="html"><![CDATA[<h2 id="新年快乐"><a href="#新年快乐" class="headerlink" title="新年快乐"></a>新年快乐</h2>]]></content>
       
       
+      <categories>
+          
+          <category> 日常琐事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日常 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -37,6 +61,18 @@
         <content type="html"><![CDATA[<h2 id="一、Let和Const"><a href="#一、Let和Const" class="headerlink" title="一、Let和Const"></a>一、Let和Const</h2><p>let声明变量，可变</p><p>const定义常量（实际指的是变量和的内存地址），不可变</p><p>只能在其声明或定义的代码块内有效</p><p>注：若区块中存在let或者const命令，则这个区块对这些变量和常量在一开始就行成封闭作用域，只要在声明之前使用就会报错（可能会出现暂时性死区）</p><p>不能重复声明，否则报错<br>（一）块级作用域<br>闭包：JS中的变量是没有作用域时的一个临时解决方案</p><p>块级作用域可以任意嵌套</p><p>外层作用域不能访问内层作用域的变量</p><p>内层作用域可以定义外层作用域的变量</p><p>函数中的块级作用域<br>es6中在块级作用域中可以声明函数</p><p>函数声明的语句和let的行为类似，在块级作用域外不能访问</p><p>函数声明也会提到块级作用域的头部</p><p>（二）ES6声明变量的6种方式<br>var<br>function<br>let<br>const<br>import<br>class</p><h2 id="二、解构赋值"><a href="#二、解构赋值" class="headerlink" title="二、解构赋值"></a>二、解构赋值</h2><p>按照一定模式从数组和对象中提取值，然后赋值给变量</p><p>如果解构不成功，则变量的值为undefined</p><p>不完全解构：等号左边的模式值匹配一部分的等号右边的数组，仍然可以解构成功</p><p>解构赋值允指定默认值</p><p>默认值可以引起解构的其他变量，但是该变量必须已经声明</p><p>（一）对象的解构赋值<br>数组的元素是按照次序排列的，变量的取值是按照他的位置决定的，而对象没有次序，变量必须与属性同名才能取到正确的值</p><p>对象的解构也可以指定默认值，默认值生效的条件是，对象的属性严格的等于undefined</p><p>如果解构失败，变量的值就等于undefined</p><p>如果解构的模式是嵌套的对象，而且子对象所在的父属性不存在，则会报错</p><p>不会复制继承自原对象的属性</p><p>（二）字符串的解构赋值<br>字符串解构赋值时字符串被转换成了一个类似于数组的对象（类似于数组的对象还有一个length属性，也可对其赋值）</p><p>（三）数值和布尔的解构赋值<br>解构赋值时，如果等号右边是数值或者布尔值，则会先转换成为对象，在进行赋值</p><p>解构的规则：只要等号的右边不是对象或者数组，都会先将其转换成对象（注：undefined和null无法转换成对象，对其进行赋值时都会报错）</p><p>（四）函数的解构赋值<br>函数参数也可以进行解构，也可使用默认值</p><p>（五）圆括号问题<br>变量声明语句，模式不能使用圆括号（eg：函数的参数）</p><p>赋值语句的非模式部分可以使用圆括号</p><h2 id="三、字符串的扩展"><a href="#三、字符串的扩展" class="headerlink" title="三、字符串的扩展"></a>三、字符串的扩展</h2><p>JS允许使用\uxxxx的形式表示一个字符，xxxx：字符的Unicode码点</p><p>在JS内部，字符以UTF-16的格式存储，每个字符固定为2个字节</p><p>codePointAt（）：能正确处理4个节点的字符，并返回一个字符的码点</p><p>​ 参数：字符在字符串中的位置</p><p>String.fromCharCode（）：可以识别大于0xFFFF的字符</p><p>​ 参数：大于0xFFFF的字符</p><p>at（）：可以识别Unicode编号大于0xFFFF的字符，返回正确的字符</p><p>​ 参数：</p><p>normalize（）：将字符的不同表示方法表示为同样的形式</p><p>​ 参数：可以接受一个参数来决定normalize的形式，有4个可选值</p><p>NFC（默认参数）：标准等价合成，指视觉和语义上的等价<br>NFD：标准等价分解，在标准等价的前提下，返回合成字符分解出的多个简单字符<br>NFKC：兼容等价合成，返回合成字符。兼容等价 指语义上等价，直觉上不等价<br>NFKD：兼容等价分解：在兼容等价的前提下，返回合成字符分解出的多个简单字符<br>（一）除indexOf（）外来确定一个字符串中是否包含灵感字符串的3中方法<br>includes（）：返回布尔值，表是否找到了参数字符串</p><p>​ 参数：要查找的字符串</p><p>starsWith（）：返回布尔值，表参数字符串是否在源字符串的头部</p><p>​ 参数：要查找的字符串</p><p>endsWith（）：返回布尔值，表参数字符串是否在源字符串的尾部</p><p>​ 参数：要查找的字符串</p><p>其他一些方法<br>repeat（）：返回一个字符串，表示将原字符串重复n次</p><p>​ 参数：次数n</p><p>注：</p><p>参数是小数，会被取整<br>参数是负数或者Infinity，会报错<br>参数在0-1之间，则等同于0<br>参数为NaN，则等同于0<br>padStar（）：头部补全 而 padEnd（）：尾部补全</p><p>​ 参数1：指定字符串的最小长度</p><p>​ 参数2：用于补全的字符串</p><p>注：</p><p>若原字符串的长度等于或大于指定的最小长度，返回原字符串<br>若用于补全的字符串与原字符串之和超出了指定的最小长度，则会截去超出位数的补全字符串<br>如果省略了第二个参数，会用空格补全<br>（二）模板字符串<br>&#96;&#96;</p><p>可当做普通字符串使用<br>可定义多行字符串<br>可嵌套变量（需将变量写在${}中）<br>可调用函数<br>可嵌套模板字符串<br>String.raw（）：充当模板字符串的处理函数，返回一个反斜线都被转义的字符串，对应于替换变量后的模板字符串</p><p>​ 也可当正常的函数使用，第一个从参数应该是一个具有raw属性的对象（应该是一个数组）</p><h2 id="四、数值的扩展"><a href="#四、数值的扩展" class="headerlink" title="四、数值的扩展"></a>四、数值的扩展</h2><p>ES6 中八进制要以前缀0o表示</p><p>（一）Number的扩展<br>Number.isFinite（）：检查一个数值是否为有限的</p><p>​ 参数：要检查的数值</p><p>Number.isNaN（）：用于检查一个数值是否为NaN</p><p>​ 参数：要检查的数值</p><p>Number.isInteger（）：判断一个数是否为整数</p><p>​ 参数：要检查的数值</p><p>Number.isSafeInteger（）：判断一个数是否搂在这个范围之内，返回布尔值</p><p>​ 参数：要检查的数值</p><p>（二）Math对象的扩展<br>Math.trunc（）：用于除去一个数的小数部分，返回整数部分</p><p>对于非数值，内部将其先转化为数值</p><p>对于空值和无法返回的值，返回NaN</p><p>​ 参数：要检查的数值</p><p>Math.sign（）：判断一个数到底是正数，负数，还是0</p><p>参数有5中情况</p><p>参数为正数，返回+1<br>参数为负数，返回-1<br>参数为0，返回0<br>参数为-0，返回-0<br>其他值，返回NaN<br>注：对于非数值，会将其转换为数值</p><p>Math.cbrt（）：用于计算一个数的立方根（对于非数值，此案转换为数值）</p><p>Math.clz32（）：返回一个数的32位无符号整数形式有多少个前导0</p><p>​ 参数：数值</p><p>对于小数，只考虑整数部分<br>对于空值和其他类型的值，先转换成为数值，在计算<br>Math.imul（）：返回两个数以32位带符号正数形式相乘的结果，返回的也是一个32位的带符号整数</p><p>Math.fround（）：返回一个数的单精度浮点数形式</p><p>Math.hypot（）：返回所有参数的平方和的平方根</p><p>若参数不是数值，会先转换成数值，在计算、<br>只要有一个参数无法转换为数值，就返回NaN<br>（1）对数<br>Math.expm1（x）：返回e的x次方-1</p><p>Math.log1p（x）：返回ln（1+x），如果x小于-1，返回NaN</p><p>Math.log10（x）：返回以10 为底x的对数，如果小于0，返回NaN</p><p>Math.log2（x）：返回以2 为底x的对数，如果小于0，返回NaN</p><p>（2）双曲函数<br>Math.sinh（x）：返回x的双曲正弦</p><p>Math.cosh（x）：返回x的双曲余弦</p><p>Math.tanh（x）：返回x的双曲正切</p><p>Math.asinh（x）：返回x的反双曲正弦</p><p>Math.acosh（x）：返回x的反双曲余弦</p><p>Math.atanh（x）：返回x的反双曲正切</p><p>（3）Math.signbit（）<br>判断一个数的正负</p><p>参数是NaN，返回false<br>参数是-0，返回true<br>参数是负值，返回true<br>其他情况，返回false<br>（三）integer数据类型<br>必须要以后缀n来表示</p><p>二进制、八进制、十六进制都要以后缀n来表示</p><p>注：</p><p>几乎所有的Number运算都能用在integer中，除&gt;&gt;&gt;和求证运算符+<br>Integer类型与Number类型不能混合运算，会报错<br>相等运算符（&#x3D;&#x3D;）会改变数据类型，不能混合使用<br>精确相等运算符（&#x3D;&#x3D;&#x3D;）不会改变数据类型，可以混合使用</p><h2 id="五、函数的扩展"><a href="#五、函数的扩展" class="headerlink" title="五、函数的扩展"></a>五、函数的扩展</h2><p>ES6允许为函数设置默认值，即直接写在参数定义的后面</p><p>使用参数默认值时，不能有同名的参数</p><p>注：参数默认值不是传值的，而是每次都重新计算默认值表达式的值（参数默认值是惰性求值）</p><p>通常情况下，定义了参数默认值的参数是函数的尾参数</p><p>有参数的默认值都是尾参数，除非显示输入undefined，如果传入的是undefined，将触发默认值，null不行</p><p>设置了默认值之后，或者默认值不是尾参数，函数的length不在计入后面的参数（length属性失真）</p><p>一旦设置了参数的默认值，函数在进行初始化的时候，参数会形成一个单独的作用域，等到初始化结束的时候，这个作用域消失（不设置参数默认值的时候不会出现）</p><p>利用参数默认值可以指定某一个参数不得省略，若省略则报错</p><p>可以将参数默认值设置为undefined，表示这个参可以省略</p><p>rest参数（形为“…变量名”），用于获取函数多余的参数</p><p>函数的name属性返回函数的函数名</p><p>箭头函数<br>ES6简明笔记中有</p><p>注：</p><p>箭头函数可以嵌套箭头函数</p><h2 id="六、数组的扩展"><a href="#六、数组的扩展" class="headerlink" title="六、数组的扩展"></a>六、数组的扩展</h2><p>扩展运算符 （ . . . ）</p><p>主要用于函数调用</p><p>扩展运算符 后可以放表达式</p><p>如果扩展运算符后面是一个空数组，则不产生任何效果</p><p>可以合并数组</p><p>可以与结构赋值结合起来生成数组</p><p>若扩展运算符用于数组，只能放在参数的最后一位，否则报错</p><p>可以将字符串转为真正的数组</p><p>Array.from（）：将伪数组（两类对象：类似于数组的对象）转换为真正的数组</p><p>Array.of（一组值）：将一组数转换为数组，若没有参数，则返回空数组</p><p>copyWithin（）：在当前数组内部将指定位置的成员复制到其他地方，然后返回数组（会修改数组）</p><p>​ 接受3个参数</p><p>target（必选）：从该位置开始替换数据<br>start（可选）：从该位置开始读取数据，默认值为0，如果为负数，表示倒数<br>end（可选）：到该位置停止读取数据，默认等于数组长度，若为负，表示倒数<br>fill（）：用于填充数组</p><p>​ 参数1（必填）：用于填充的给定值</p><p>​ 参数2（可选）：填充的起始位置</p><p>​ 参数3（可选）：填充的结束位置</p><p>entries（）、keys（）、value（）用于遍历数组</p><p>entries（）：对键值对的遍历</p><p>keys（）：对键名的遍历</p><p>values（）：对键值的遍历</p><p>includes（）：表示某个数组是否包含给定的值，返回一个布尔值</p><p>​ 参数1：给定值</p><p>​ 参数2：搜索的起始位置，默认为0，若为负数，则表示倒数的位置，如果这时大于数组长度，则会重置为从0开始</p><p>数组的空位<br>数组的空位值数组的某一个位置没有任何值（空值不是undefined）</p><p>Array.from（）会将数组的空位转换成为undefined</p><p>扩展运算符也会将空位转为undefined</p><p>copyWithin（）会将空位一起复制</p><p>fill（） 会将空位视为数组正常的位置</p><h2 id="七、对象的扩展"><a href="#七、对象的扩展" class="headerlink" title="七、对象的扩展"></a>七、对象的扩展</h2><p>ES6允许直接写入变量和函数作为对象的属性和方法</p><p>在对象中可只写属性名，不写属性值</p><p>可直接用标识符作为属性名，也可将表达式放在方括号内作为属性名（字面量定义）</p><p>Object.is（）：比较两个值是否严格相等，与严格相等运算符（&#x3D;&#x3D;&#x3D;）的行为基本一致（注：有两个不同之处1：+0不等于 -0、2：NaN等于自身）</p><p>Object.assign（）：将源对象的所有可枚举属性复制到目标对象</p><p>​ 第一个参数是目标对象，后面的参数是源对象</p><p>注：</p><p>只有一个参数，会返回改参数<br>若改参数不是对象，会先转换为对象，然后返回<br>由于undefined和null无法转换为对象，所以人工将它们作为参数就会报错<br>其他类似的值（数值、布尔）不在首参也不会报错，但是除了字符串会议数组的形式复制到目标对象，其他值都不会产生效果<br>Object.assign（）是浅复制（即源对象的某个属性的值是对象，name目标对象复制得到的是这个对象的引用）<br>（一）对象的可枚举性<br>for…in循环：只遍历对象自身和继承的可枚举属性</p><p>Object.keys（）：返回对象自身的所有可枚举属性的键名</p><p>JSON.Stringify（）：只串化对象自身的可枚举属性</p><p>Object.assign（）：将源对象的所有可枚举属性复制到目标对象</p><p>注：所有class的原型的方法时不可枚举的</p><p>（二）属性的遍历<br>for…in：循环遍历对象自身和继承的可枚举属性（不包含Symbol属性）</p><p>Object.keys（obj）：返回一个数组，包含对象自身的（不含继承的）所有可枚举属性（不包含symbol属性）</p><p>Object.getOwnPropertyNames（obj）：返回一个数组，包含对象自身的所有属性（不含Symbol，但是含有不可枚举属性）</p><p>Object.getOwnPropertySymbols（obj）：返回一个数组，包含对象自身的所有Symbol属性</p><p>Reflect.ownKeys（obj）：返回一个数组，包含对象自身的所有属性，不管属性名是Symbol还是字符串，也不管是否可枚举</p><p>以上5中均遵循属性遍历次序规则</p><p>首先遍历所有属性名为数值的属性，按照数字排序<br>其次遍历所有属性名为字符串的属性，按照生成时间排序<br>最后遍历所有属性名为Symbol的属性，按照生成时间排序<br>（三）_ _ proto _ _属性<br>用于读取或者设置当前对象的prototype属性</p><p>缺点：兼容性和语义都不是很好</p><p>ES6使以下三种替换它</p><p>Object.setPrototypeOf（obj）：用来设置一个对象的prototype属性，返回参数对象本身</p><p>​ 参数：第一个参数若不是对象，则会自动转化为对象（undefined和null时会报错）</p><p>Object.getPrototypeOf（）：用于读取一个对象的prototype属性</p><p>​ 参数：参数若不是对象，则会自动转化为对象（undefined和null时会报错）</p><p>Object.reate（）：生成对象</p><p>（四）对象的解构赋值和扩展运算符混用<br>对象的解构赋值会将所有的键值对都复制到新的对象上面</p><p>解构赋值必须是最后一个参数，否则会报错</p><p>解构赋值不会复制继承自原型对象的属性</p><p>扩展运算符可用于合并两个对象</p><p>若自定义的属性放在扩展运算符后面，则扩展运算符内部有同名属性会被覆盖</p><p>若把自定义属性放在扩展运算符前面，则变成了设置新对象的默认属性</p><p>若扩展运算符的参数是undefined或者null，则这两个值会被忽略，不会报错</p><p>若扩展运算符的参数对象之中有取值函数get，则这个函数会被执行</p><p>（四）Object.getOwnPropertyDescriptors（obj）<br>Object.getOwnPropertyDescriptor（obj）：用于返回某个对象属性的描述对象</p><p>Object.getOwnPropertyDescriptors（obj）：返回指定对象所有自身属性（非继承属性）的描述对象</p><p>主要是为了解决Object.assign（）无法正确复制get属性和set属性</p><p>（五）Null传导运算符<br>四中用法</p><p>obj?.prop ：读取对象属性<br>obj?.[expr]：读取对象属性<br>func.{…args}：函数或对象方法的调用<br>new C ?.{…args}：构造函数的调用</p>]]></content>
       
       
+      <categories>
+          
+          <category> 学习日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -63,6 +99,18 @@
         <content type="html"><![CDATA[<h2 id="HTML-2022-9-16"><a href="#HTML-2022-9-16" class="headerlink" title="HTML 2022.9.16"></a>HTML 2022.9.16</h2><p>基本掌握</p><h2 id="CSS-2022-10-23"><a href="#CSS-2022-10-23" class="headerlink" title="CSS 2022.10.23"></a>CSS 2022.10.23</h2><p>基本掌握</p><h2 id="JS-2022-12-15"><a href="#JS-2022-12-15" class="headerlink" title="JS  2022.12.15"></a>JS  2022.12.15</h2><p>js基本语法<br>浏览器内置对象<br>DOM API<br>BOM API<br>移动端配置<br>jQuery(js库)<br>ECharts(js库)</p><h2 id="Ajax-2022-12-30"><a href="#Ajax-2022-12-30" class="headerlink" title="Ajax 2022.12.30"></a>Ajax 2022.12.30</h2><p>原生Ajax<br>jQuery发送Ajax请求<br>axios发送Ajax请求<br>fetch函数发送Ajax请求<br>express框架搭建服务端<br>调用接口<br>实现跨域</p><h2 id="node-js-学习进度10"><a href="#node-js-学习进度10" class="headerlink" title="node.js (学习进度10%)"></a>node.js (学习进度10%)</h2><p>js的后端运行环境</p><h2 id="ES6-学习进度5"><a href="#ES6-学习进度5" class="headerlink" title="ES6 (学习进度5%)"></a>ES6 (学习进度5%)</h2><h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h2 id="spring-boot"><a href="#spring-boot" class="headerlink" title="spring boot"></a>spring boot</h2><h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><h2 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h2><h2 id="java-web"><a href="#java-web" class="headerlink" title="java web"></a>java web</h2>]]></content>
       
       
+      <categories>
+          
+          <category> 学习日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
       
     </entry>
     
