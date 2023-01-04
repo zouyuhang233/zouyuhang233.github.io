@@ -275,3 +275,15 @@ div#archive {
 	background: rgba(25, 25, 25, 0.9) !important;
 	color: #ffffff;
 }
+
+@import "//at.alicdn.com/t/c/font_3850435_vutymplhpej.css";
+@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";
+
+.iconfont {
+	font-family: "iconfont" !important;
+	/* 这里可以自定义图标大小 */
+	font-size: 3em;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
